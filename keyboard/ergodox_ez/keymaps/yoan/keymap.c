@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_EXLM,    KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_TRNS,
        KC_TRNS, LGUI(KC_Z), KC_MINS, KC_EQL , KC_LBRC, KC_RBRC,
-       KC_TRNS, KC_TRNS,    KC_UNDS, KC_UNDS, KC_LABK, KC_RABK, KC_TRNS,
+       KC_TRNS, KC_TRNS,    KC_UNDS, KC_PLUS, KC_LABK, KC_RABK, KC_TRNS,
        KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,
                                            KC_TRNS, KC_TRNS,
                                                     KC_TRNS,
