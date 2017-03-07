@@ -1,7 +1,7 @@
 // Netable differences vs. the default firmware for the ErgoDox EZ:
 // 1. The Cmd key is now on the right side, making Cmd+Space easier.
 // 2. The media keys work on OSX (But not on Windows).
-#include "ergodox_ez.h"
+#include "ergodox.h"
 #include "debug.h"
 #include "action_layer.h"
 
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * |        |   !  |   @  |   #  |   $  |   %  |      |           |      |   ^  |   &  |   *  |   \  |   |  |   F12  |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |        |  ^z  |   -  |   =  |   [  |   ]  |------|           |------|   {  |   }  |   "  |   /  |      |        |
+ * |   ^[   |  ^z  |   -  |   =  |   [  |   ]  |------|           |------|   {  |   }  |   "  |   /  |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+-------------+------+------+--------|
  * |        |      |   _  |   +  |   <  |   >  |      |           |      |   (  |   )  |   '  |      |      |        |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -77,11 +77,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // SYMBOLS
 [SYMB] = KEYMAP(
        // left hand
-       KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS, KC_EXLM,    KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_TRNS,
-       KC_TRNS, LCTL(KC_Z), KC_MINS, KC_EQL , KC_LBRC, KC_RBRC,
-       KC_TRNS, KC_TRNS,    KC_UNDS, KC_PLUS, KC_LABK, KC_RABK, KC_TRNS,
-       KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_TRNS,       KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_TRNS,       KC_EXLM,    KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_TRNS,
+       LCTL(KC_LBRC), LCTL(KC_Z), KC_MINS, KC_EQL , KC_LBRC, KC_RBRC,
+       KC_TRNS,       KC_TRNS,    KC_UNDS, KC_PLUS, KC_LABK, KC_RABK, KC_TRNS,
+       KC_TRNS,       KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,
                                            KC_TRNS, KC_TRNS,
                                                     KC_TRNS,
                                   LGUI(KC_SPC), KC_TRNS, KC_TRNS,
